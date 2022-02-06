@@ -34,7 +34,7 @@ module.exports = {
             users.push(member.user.username);
 
         })
-        if (users.length != 2) return message.reply("`Ses kanalında minimum 2 kişi bulunmalı!`")
+        if (users.length < 2) return message.reply("`Ses kanalında minimum 2 kişi bulunmalı!`")
 
         var player_1 = users[Math.floor(Math.random() * users.length)]
         var player_2 = users[Math.floor(Math.random() * users.length)]
